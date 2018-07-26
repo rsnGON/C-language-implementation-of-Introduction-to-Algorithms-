@@ -122,7 +122,6 @@ void square_matrix_multiply_recursive(square_matrix *a, square_matrix *b, square
 		b->rows /= 2;
 		c->rows /= 2;
 		
-		int ccopy[c->rows * c->rows]; // c copy
 
 		vector a11 = { vectora.row_start, vectora.column_start };
 		vector a12 = { vectora.row_start, vectora.column_start + a->rows };
